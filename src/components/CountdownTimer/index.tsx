@@ -1,3 +1,4 @@
+// CountdownTimer/index.tsx
 import React, { useState, useEffect } from 'react';
 import { TimerDisplay } from './TimerDisplay';
 
@@ -35,8 +36,6 @@ export function CountdownTimer() {
   return (
     <div className="py-8">
       <TimerDisplay timeLeft={timeLeft} />
-      
-      {/* Technical decorative text */}
       <div className="mt-6 flex justify-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900/50 backdrop-blur-sm">
           <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -48,3 +47,4 @@ export function CountdownTimer() {
     </div>
   );
 }
+

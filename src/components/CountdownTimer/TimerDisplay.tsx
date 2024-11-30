@@ -1,3 +1,4 @@
+// TimerDisplay.tsx
 import React from 'react';
 import { TimeUnit } from './TimeUnit';
 
@@ -19,8 +20,6 @@ export function TimerDisplay({ timeLeft }: TimerDisplayProps) {
         <TimeUnit value={timeLeft.minutes} label="minutes" />
         <TimeUnit value={timeLeft.seconds} label="seconds" />
       </div>
-      
-      {/* Technical background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-full">
